@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2 {
+  padding: 0.5rem;
+}
+
+h1 {
+  padding: 1rem;
+  display: flex;
+  font-size: xx-large;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+ul,
+ol {
+  margin: 0.5rem;
+}
+
+li {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
