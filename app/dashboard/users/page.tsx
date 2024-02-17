@@ -1,7 +1,7 @@
 import React from "react";
 
 const DashboardUsers = () => {
-  return <div></div>;
+  return <div>Users</div>;
 };
 
 export default DashboardUsers;
