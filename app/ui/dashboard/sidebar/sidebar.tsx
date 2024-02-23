@@ -59,8 +59,8 @@ const menuItems = [
     title: "User",
     list: [
       {
-        title: "Settings",
-        path: "/dashboard/settings",
+        title: "Setting",
+        path: "/dashboard/setting",
         icon: <FaBarsProgress />,
       },
       {
@@ -74,71 +74,23 @@ const menuItems = [
 
 const Sidebar = () => {
   return (
-    <div>
-      <div>
-        <ul>
-          {menuItems.map((cat) => (
-            <li key={cat.title}>
-              <span>{cat.title}</span>
-              {cat.list.map((item) => (
-                <MenuLink item={item} key={item.title} />
-              ))}
-            </li>
-          ))}
-        </ul>
+    <div className="fixed top-5">
+      <div className="flex justify-center">
+        <img src="/admin.jpg" alt="Admin booty" className="w-24 rounded-full" />
+        <div className="flex flex-col justify-center">
+          <span className="p-1">Mostafa</span>
+          <span className="p-1">adminstator</span>
+        </div>
       </div>
-      <ul>
-        <li>
-          <ul>
-            <Image src="" alt="" />
-            <li>UserName</li>
-            <li>userPremission</li>
-          </ul>
-        </li>
-        <li>
-          <h2>Pages</h2>
-          <ul>
-            <li>
-              <Link href="/dashboard/users">Users </Link>
-            </li>
-            <li>
-              <Link href="/dashboard/products">Products</Link>
-            </li>
-            <li>
-              <Link href="/dashboard/transactions">Transactions</Link>
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <h2>Analytics</h2>
-          <ul>
-            <li>
-              <Link href="/dashboard/ravenu">Ravnue</Link>
-            </li>
-            <li>
-              <Link href="/dashboard/reports">Reports</Link>
-            </li>
-            <li>
-              <Link href="/dashboard/teams">Teams</Link>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h2>User</h2>
-          <ul>
-            <li>
-              <Link href="/dashboard/setting">Setting</Link>
-            </li>
-            <li>
-              <Link href="/dashboard/help">Help</Link>
-            </li>
-            <li>
-              <TbLogout2 />
-              <Link href="/dashboard/logout">Logout</Link>
-            </li>
-          </ul>
-        </li>
+      <ul className="text-lg">
+        {menuItems.map((cat) => (
+          <li key={cat.title}>
+            <span className="">{cat.title}</span>
+            {cat.list.map((item) => (
+              <MenuLink item={item} key={item.title} />
+            ))}
+          </li>
+        ))}
       </ul>
     </div>
   );
