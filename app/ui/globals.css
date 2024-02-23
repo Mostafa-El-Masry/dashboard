@@ -65,4 +65,15 @@ li li :link {
   background-color: var(--bgSoft);
   color: var(--textSoft);
   overflow: hidden;
+  width: 25vw;
+  color: var(--textSoft);
+}
+
+.navbar {
+  background-color: var(--bgSoft);
+  color: var(--textSoft);
+  overflow: hidden;
+  width: 78vw;
+  margin: 0 1rem;
+  color: var(--textSoft);
 }

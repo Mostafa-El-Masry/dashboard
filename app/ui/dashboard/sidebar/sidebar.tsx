@@ -76,7 +76,11 @@ const Sidebar = () => {
   return (
     <div className="fixed top-5">
       <div className="flex justify-center">
-        <img src="/admin.jpg" alt="Admin booty" className="w-24 rounded-full" />
+        <img
+          src="/admin.jpeg"
+          alt="Admin booty"
+          className="w-24 rounded-full"
+        />
         <div className="flex flex-col justify-center">
           <span className="p-1">Mostafa</span>
           <span className="p-1">adminstator</span>
@@ -85,7 +89,7 @@ const Sidebar = () => {
       <ul className="text-lg">
         {menuItems.map((cat) => (
           <li key={cat.title}>
-            <span className="">{cat.title}</span>
+            <span>{cat.title}</span>
             {cat.list.map((item) => (
               <MenuLink item={item} key={item.title} />
             ))}
