@@ -61,19 +61,24 @@ li li :link {
 
 /********************  Side Bar ********************/
 
-.sidebar {
+.sidebar,
+.navbar,
+.cartcard {
   background-color: var(--bgSoft);
-  color: var(--textSoft);
-  overflow: hidden;
-  width: 25vw;
   color: var(--textSoft);
 }
 
+.sidebar {
+  overflow: hidden;
+  width: 25vw;
+}
+
 .navbar {
-  background-color: var(--bgSoft);
-  color: var(--textSoft);
   overflow: hidden;
   width: 78vw;
   margin: 0 1rem;
-  color: var(--textSoft);
+}
+
+.content-container {
+  margin: auto 1rem;
 }

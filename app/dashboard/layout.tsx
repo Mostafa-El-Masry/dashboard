@@ -4,7 +4,7 @@ import Navbar from "../ui/dashboard/navbar/navbar";
 
 const layout = ({ children }) => {
   return (
-    <div className="flex">
+    <div className="flex overflow-hidden">
       <div className="p-5 sidebar h-screen w-1/5">
         <Sidebar />
       </div>

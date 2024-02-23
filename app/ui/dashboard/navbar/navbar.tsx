@@ -14,7 +14,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="flex navbar items-center justify-between capitalize p-6">
+    <div className="flex navbar items-center justify-between capitalize p-4">
       <div className="flex">{pathname.split("/").pop()}</div>
       <div className="flex items-center justify-between gap-5">
         <div className="flex bg-slate-700 text-slate-200 items-center text-lg rounded-2xl">
@@ -22,7 +22,7 @@ const Navbar = () => {
           <input
             type="text"
             placeholder="Search some thing Mostafa"
-            className="bg-transparent p-3  outline-none border-none"
+            className="bg-transparent p-1  outline-none border-none"
           />
         </div>
 
