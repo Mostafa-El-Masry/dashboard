@@ -48,11 +48,7 @@ const menuItems = [
         path: "/dashboard/reports",
         icon: <TbReportSearch />,
       },
-      {
-        title: "Teams",
-        path: "/dashboard/teams",
-        icon: <RiTeamFill />,
-      },
+
     ],
   },
   {
@@ -62,11 +58,6 @@ const menuItems = [
         title: "Setting",
         path: "/dashboard/setting",
         icon: <FaBarsProgress />,
-      },
-      {
-        title: "Help",
-        path: "/dashboard/help",
-        icon: <SiHelpscout />,
       },
     ],
   },

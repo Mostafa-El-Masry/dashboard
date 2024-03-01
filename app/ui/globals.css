@@ -15,10 +15,10 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   background-color: var(--bg);
-  color: var(--text);
-}
+  color: var(--text); 
+} */
 
 a {
   text-decoration: none;
