@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MenuLink from "../sidebar/menuLink/menuLink";
 import { AiOutlineTransaction } from "react-icons/ai";
-import { FaBeer, FaMoneyBillWave } from "react-icons/fa";
+import { FaAddressBook, FaBeer, FaMoneyBillWave } from "react-icons/fa";
 import { FaBarsProgress, FaChalkboardUser } from "react-icons/fa6";
 import { MdDashboard, MdProductionQuantityLimits } from "react-icons/md";
 import { RiTeamFill } from "react-icons/ri";
@@ -17,6 +17,11 @@ const menuItems = [
         title: "Dashboard",
         path: "/dashboard",
         icon: <MdDashboard />,
+      },
+      {
+        title: "NoteBook",
+        path: "https://note-book-nine.vercel.app/",
+        icon: <FaAddressBook />,
       },
       {
         title: "Users",
@@ -48,7 +53,6 @@ const menuItems = [
         path: "/dashboard/reports",
         icon: <TbReportSearch />,
       },
-
     ],
   },
   {
@@ -67,11 +71,7 @@ const Sidebar = () => {
   return (
     <div className="fixed top-5">
       <div className="flex justify-center">
-        <img
-          src="/admin.jpeg"
-          alt="Admin booty"
-          className="w-24 rounded-full"
-        />
+        <img src="/img.jpg" alt="Admin booty" className="w-24 rounded-full" />
         <div className="flex flex-col justify-center">
           <span className="p-1">Mostafa</span>
           <span className="p-1">adminstator</span>
