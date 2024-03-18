@@ -9,22 +9,24 @@ import {
 } from "react-icons/md";
 
 const Navbar = () => {
-
   const links = [
-    {href:"/", label:"Home"},
-    {href:"/dashboard", label:"DashBoard"},
-  ]
+    { href: "/", label: "Home" },
+    { href: "/dashboard", label: "DashBoard" },
+    { href: "/dashboard/issues", label: "Issues" },
+  ];
 
   return (
     <div className="flex navbar items-center justify-between capitalize p-4">
       <div className="flex">
-      <ul>
-        {links.map(link => <Link key={link.href} href={link.href} 
-        className="ml-6"
-        >{link.label}</Link>)}
-      </ul>
+        <ul>
+          {links.map((link) => (
+            <Link key={link.href} href={link.href} className="ml-6">
+              {link.label}
+            </Link>
+          ))}
+        </ul>
       </div>
-      
+
       <div className="flex items-center justify-between gap-5">
         <div className="flex bg-slate-700 text-slate-200 items-center text-lg rounded-2xl">
           <MdSearch />
