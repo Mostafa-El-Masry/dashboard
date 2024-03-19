@@ -1,5 +1,7 @@
 "use client";
+import classNames from "classnames";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   MdNoAccounts,
   MdNotifications,
@@ -9,6 +11,8 @@ import {
 } from "react-icons/md";
 
 const Navbar = () => {
+  const currentPath = usePathname();
+
   const links = [
     { href: "/", label: "Home" },
     { href: "/dashboard", label: "DashBoard" },
@@ -20,7 +24,14 @@ const Navbar = () => {
       <div className="flex">
         <ul>
           {links.map((link) => (
-            <Link key={link.href} href={link.href} className="ml-6">
+            <Link
+              key={link.href}
+              href={link.href}
+              className={classNames({
+                "text-zinc-50": link.href === currentPath,
+                "ml-6": true,
+              })}
+            >
               {link.label}
             </Link>
           ))}

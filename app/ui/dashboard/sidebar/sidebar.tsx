@@ -8,6 +8,7 @@ import { MdDashboard, MdProductionQuantityLimits } from "react-icons/md";
 import { RiTeamFill } from "react-icons/ri";
 import { SiHelpscout } from "react-icons/si";
 import { TbLogout2, TbReportSearch } from "react-icons/tb";
+import { usePathname } from "next/navigation";
 
 const menuItems = [
   {
