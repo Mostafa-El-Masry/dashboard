@@ -1,6 +1,5 @@
 import React from "react";
 import Sidebar from "../ui/dashboard/sidebar/sidebar";
-import Navbar from "../ui/dashboard/navbar/navbar";
 
 const layout = ({ children }) => {
   return (
@@ -8,10 +7,7 @@ const layout = ({ children }) => {
       <div className="p-5 sidebar h-screen w-1/5">
         <Sidebar />
       </div>
-      <div>
-        <Navbar />
-        {children}
-      </div>
+      {children}
     </div>
   );
 };
