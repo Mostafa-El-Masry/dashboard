@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex navbar items-center justify-between capitalize p-4">
+    <div className="flex w-screen items-center justify-between capitalize bg-sky-500 p-5">
       <div className="flex">
         <ul>
           {links.map((link) => (

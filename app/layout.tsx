@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./ui/globals.css";
+import "@radix-ui/themes/styles.css";
+import { Theme } from "@radix-ui/themes";
+import Navbar from "./navbar/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html data-theme="bumblebee" lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Theme>
+          <div className="overflow-hidden">
+            <Navbar />
+          </div>
+          {children}
+        </Theme>
+      </body>
     </html>
   );
 }
