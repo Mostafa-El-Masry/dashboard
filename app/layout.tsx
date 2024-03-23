@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./ui/globals.css";
+import "./globals.css";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
 import Navbar from "./navbar/navbar";
@@ -24,7 +24,7 @@ export default function RootLayout({
               <Navbar />
             </div>
             <div className="flex flex-row">
-              <div className="sidebar w-1/5 mr-5">
+              <div className="sidebar flex-none w-1/5 h-screen mr-5">
                 <Sidebar />
               </div>
               <div className="flex-1 main">{children}</div>

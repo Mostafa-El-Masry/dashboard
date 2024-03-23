@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex navbar w-screen items-center justify-between capitalize">
+    <div className="flex navbar w-screen items-center justify-between capitalize overflow-hidden">
       <div className="flex">
         <ul>
           {links.map((link) => (
