@@ -1,7 +1,5 @@
-import React from "react";
 import Transactions from "../ui/dashboard/transactions/transactions";
 import Chart from "../ui/dashboard/chart/chart";
-import Rightbar from "../ui/dashboard/rightbar/rightbar";
 import Cart from "../ui/dashboard/cart/cart";
 
 const DashBoard = () => {
@@ -13,9 +11,6 @@ const DashBoard = () => {
         </div>
         <Transactions />
         <Chart />
-      </div>
-      <div className="flex-1">
-        <Rightbar />
       </div>
     </div>
   );

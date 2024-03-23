@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./ui/globals.css";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
 import Navbar from "./navbar/navbar";
-
-const inter = Inter({ subsets: ["latin"] });
+import Sidebar from "./sidebar/sidebar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,12 +17,19 @@ export default function RootLayout({
 }>) {
   return (
     <html data-theme="bumblebee" lang="en">
-      <body className={inter.className}>
+      <body className="w-screen">
         <Theme>
-          <div className="overflow-hidden">
-            <Navbar />
+          <div className="flex flex-col">
+            <div>
+              <Navbar />
+            </div>
+            <div className="flex flex-row">
+              <div className="sidebar w-1/5 mr-5">
+                <Sidebar />
+              </div>
+              <div className="flex-1 main">{children}</div>
+            </div>
           </div>
-          {children}
         </Theme>
       </body>
     </html>

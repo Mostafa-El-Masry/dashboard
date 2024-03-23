@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex w-screen items-center justify-between capitalize bg-sky-500 p-5">
+    <div className="flex navbar w-screen items-center justify-between capitalize">
       <div className="flex">
         <ul>
           {links.map((link) => (
@@ -39,7 +39,7 @@ const Navbar = () => {
       </div>
 
       <div className="flex items-center justify-between gap-5">
-        <div className="flex bg-slate-700 text-slate-200 items-center text-lg rounded-2xl">
+        <div className="flex text-slate-200 items-center text-lg rounded-2xl">
           <MdSearch />
           <input
             type="text"

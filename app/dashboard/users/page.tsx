@@ -1,7 +1,12 @@
-import React from "react";
+import Table from "./table";
 
 const DashboardUsers = () => {
-  return <div>Users</div>;
+  return (
+    <div>
+      Users
+      <Table />
+    </div>
+  );
 };
 
 export default DashboardUsers;

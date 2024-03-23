@@ -69,16 +69,4 @@ li li :link {
 }
 
 .sidebar {
-  overflow: hidden;
-  width: 25vw;
-}
-
-.navbar {
-  overflow: hidden;
-  width: 78vw;
-  margin: 0 1rem;
-}
-
-.content-container {
-  margin: auto 1rem;
 }
