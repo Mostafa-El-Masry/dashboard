@@ -3,7 +3,7 @@ import classNames from "classnames";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  MdNoAccounts,
+  MdDashboard,
   MdNotifications,
   MdOutlineChat,
   MdPublic,
@@ -20,9 +20,10 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex navbar w-screen items-center justify-between capitalize overflow-hidden">
+    <nav className="flex navbar items-center justify-between uppercase border-b-2 px-5 h-14 ">
       <div className="flex">
-        <ul>
+        <Link href="/" className="ml-6 text-4xl text-zinc-50"><MdDashboard /></Link>
+        <ul >
           {links.map((link) => (
             <Link
               key={link.href}
@@ -54,7 +55,7 @@ const Navbar = () => {
           <MdPublic size={20} />
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

@@ -38,9 +38,9 @@ h1 {
   align-items: center;
 }
 
-ul,
+/* ul,
 ol {
-  margin: 0.3rem;
+  padding: 0.3rem 0.7rem;
 }
 
 li {
@@ -55,8 +55,8 @@ li li {
 }
 
 li li :link {
-  margin-left: 0.5rem;
-}
+  padding: 0.5rem;
+} */
 
 /********************  Side Bar ********************/
 
@@ -65,4 +65,5 @@ li li :link {
 .cartcard {
   background-color: var(--bgSoft);
   color: var(--textSoft);
+  
 }
