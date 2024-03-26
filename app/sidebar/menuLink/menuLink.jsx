@@ -9,10 +9,7 @@ const MenuLink = ({item}) => {
 
   return (
     <Link href={item.path} className={classNames({
-      'flex items-center' : true,
-      'p-3' : true,
-      'hover:bg-zinc-700' : true,
-      'hover:text-slate-300' : true,
+      'flex items-center py-2 ml-5 px-4 rounded transition-colors hover:text-slate-300 hover:bg-zinc-700': true,
       'bg-zinc-700' : item.path === currentPath,
       'text-slate-300' : item.path === currentPath,
   })}>

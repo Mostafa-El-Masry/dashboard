@@ -24,7 +24,7 @@ export default function RootLayout({
               <Navbar />
             </div>
             <div className="flex flex-row">
-              <div className="sidebar flex-none w-1/5 h-screen mr-5">
+              <div className="sidebar flex-none ml-24 w-2/12 min-w-64 h-screen mr-5">
                 <Sidebar />
               </div>
               <div className="flex-1 main">{children}</div>

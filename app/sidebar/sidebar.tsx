@@ -65,7 +65,7 @@ const menuItems = [
 
 const Sidebar = () => {
   return (
-    <div className="p-5 ">
+    <div className="p-5">
       <div className="flex justify-center">
         <img src="/img.jpg" alt="Admin booty" className="w-24 rounded-full" />
         <div className="flex flex-col justify-center">
