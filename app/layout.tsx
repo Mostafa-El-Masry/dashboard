@@ -43,7 +43,7 @@ export default function RootLayout({
               <main className="flex-1 main p-5">{children}</main>
             </div>
           </div>
-          <ThemePanel />
+          {/* <ThemePanel /> */}
         </Theme>
       </body>
     </html>
