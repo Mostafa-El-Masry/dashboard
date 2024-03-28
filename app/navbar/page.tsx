@@ -16,23 +16,25 @@ const Navbar = () => {
   const links = [
     { href: "/", label: "Home" },
     { href: "/dashboard", label: "DashBoard" },
-    { href: "/dashboard/issues", label: "Issues" },
+    { href: "/issues", label: "Issues" },
   ];
 
   return (
     <nav className="flex navbar items-center justify-between uppercase border-b-2 px-5 h-14 ">
       <div className="flex">
-        <Link href="/" className="ml-6 text-4xl text-zinc-50"><MdDashboard /></Link>
-        <ul >
+        <Link href="/" className="ml-6 text-4xl text-zinc-50">
+          <MdDashboard />
+        </Link>
+        <ul>
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={classNames({
                 "text-zinc-50": link.href === currentPath,
-                'bg-zinc-700' : link.href === currentPath,
-                'px-5 py-2 mx-2 hover:bg-zinc-700 hover:text-slate-300 rounded transition-colors': true,
-
+                "bg-zinc-700": link.href === currentPath,
+                "px-5 py-2 mx-2 hover:bg-zinc-700 hover:text-slate-300 rounded transition-colors":
+                  true,
               })}
             >
               {link.label}
