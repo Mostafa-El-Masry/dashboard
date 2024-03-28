@@ -4,7 +4,7 @@ import React from "react";
 const IssuesPage = () => {
   return (
     <div>
-      <Button className="w-40">Add Issue</Button>
+      <Button className="w-40">Add An Issue</Button>
     </div>
   );
 };
