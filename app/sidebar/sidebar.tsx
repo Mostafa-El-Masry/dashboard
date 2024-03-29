@@ -1,9 +1,9 @@
 import MenuLink from "../sidebar/menuLink/menuLink";
 import { AiOutlineTransaction } from "react-icons/ai";
-import { FaAddressBook, FaBeer, FaMoneyBillWave } from "react-icons/fa";
+import { FaAddressBook, FaMoneyBillWave } from "react-icons/fa";
 import { FaBarsProgress, FaChalkboardUser } from "react-icons/fa6";
 import { MdDashboard, MdProductionQuantityLimits } from "react-icons/md";
-import { TbLogout2, TbReportSearch } from "react-icons/tb";
+import { TbReportSearch } from "react-icons/tb";
 
 const menuItems = [
   {

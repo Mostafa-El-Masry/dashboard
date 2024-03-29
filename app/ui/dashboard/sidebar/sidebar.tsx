@@ -1,14 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
 import MenuLink from "../sidebar/menuLink/menuLink";
 import { AiOutlineTransaction } from "react-icons/ai";
 import { FaAddressBook, FaBeer, FaMoneyBillWave } from "react-icons/fa";
 import { FaBarsProgress, FaChalkboardUser } from "react-icons/fa6";
 import { MdDashboard, MdProductionQuantityLimits } from "react-icons/md";
-import { RiTeamFill } from "react-icons/ri";
-import { SiHelpscout } from "react-icons/si";
-import { TbLogout2, TbReportSearch } from "react-icons/tb";
-import { usePathname } from "next/navigation";
+import { TbReportSearch } from "react-icons/tb";
 
 const menuItems = [
   {

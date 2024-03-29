@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
 import "./theme-config.css";
-import { Theme, ThemePanel } from "@radix-ui/themes";
+import { Theme } from "@radix-ui/themes";
 import Navbar from "./navbar/page";
 import Sidebar from "./sidebar/sidebar";
 import { Inter } from "next/font/google";
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="{inter.variable}" data-theme="bumblebee" lang="en">
+    <html className={inter.variable} data-theme="bumblebee" lang="en">
       <body>
         <Theme
           appearance="dark"

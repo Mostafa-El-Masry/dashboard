@@ -1,4 +1,4 @@
-import React from "react";
+
 import { ImUsers } from "react-icons/im";
 
 const Cart = () => {
