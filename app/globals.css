@@ -65,7 +65,8 @@ li li :link {
 
 .sidebar,
 .navbar,
-.cartcard {
+.cartcard,
+.RightBar {
   background-color: var(--bgSoft);
   color: var(--textSoft);
 }
